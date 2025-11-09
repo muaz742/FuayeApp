@@ -26,6 +26,9 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "A React Native app that displays Theater plays and Authors."
+    "description": "A React Native app that displays Theater plays and Authors.",
+    "plugins": [
+      "expo-font"
+    ]
   }
 }

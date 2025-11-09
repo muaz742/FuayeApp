@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   Button,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { useSelector, useDispatch } from 'react-redux';
 import { addFavoriteAuthor, removeFavoriteAuthor } from '../store/fuayeSlice';
@@ -47,8 +47,8 @@ const AuthorDetailScreen = ({ route }) => {
         <TouchableOpacity
           onPress={handleFavorite}
           style={styles.favoriteButton}>
-          <Icon
-            name={isFavorite ? 'ios-star' : 'ios-star-outline'}
+          <Ionicons
+            name={isFavorite ? 'star' : 'star-outline'}
             size={30}
             color="#fff"
           />

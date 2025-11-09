@@ -18,13 +18,13 @@ const MainTab = () => {
           let iconName;
           switch (route.name) {
             case 'PlaysStack':
-              iconName = focused ? 'ios-receipt' : 'ios-receipt-outline';
+              iconName = focused ? 'receipt' : 'receipt-outline';
               break;
             case 'FavoritesStack':
-              iconName = focused ? 'ios-star' : 'ios-star-outline';
+              iconName = focused ? 'star' : 'star-outline';
               break;
             case 'AuthorStack':
-              iconName = focused ? 'ios-people' : 'ios-people-outline';
+              iconName = focused ? 'people' : 'people-outline';
               break;
           }
           return <Ionicons name={iconName} size={size} color={color} />;

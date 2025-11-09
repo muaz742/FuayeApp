@@ -7,7 +7,7 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { Ionicons } from '@expo/vector-icons';
 import { useSelector, useDispatch } from 'react-redux';
 import { addFavoritePlay, removeFavoritePlay } from '../store/fuayeSlice';
 
@@ -43,8 +43,8 @@ const PlayDetailScreen = ({ route }) => {
         <TouchableOpacity
           onPress={handleFavorite}
           style={styles.favoriteButton}>
-          <Icon
-            name={isFavorite ? 'ios-star' : 'ios-star-outline'}
+          <Ionicons
+            name={isFavorite ? 'star' : 'star-outline'}
             size={30}
             color="#fff"
           />
